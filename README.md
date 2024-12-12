@@ -42,3 +42,14 @@ The configuration for Caddy is called a Caddyfile, and you can edit that file to
 - [encode](https://caddyserver.com/docs/caddyfile/directives/encode)
 - [file_server](https://caddyserver.com/docs/caddyfile/directives/file_server)
 - [try_files](https://caddyserver.com/docs/caddyfile/directives/try_files)# vue-test
+
+
+## instal from github
+
+    mkdir -p projects_from_github
+    cd projects_from_github
+    git clone https://github.com/avtarso/spa_comments_app_vue
+    cd spa_comments_app_vue
+    npm install
+    kill -9 $(lsof -t -i:5173)
+    npm run dev
